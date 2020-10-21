@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = 'description' content= 'Киномонстр - это портал о кино'/>
+    <meta name = 'keywords' content = 'Фильмы, фильмы онлайн, hd' />
+    <title>Киномонстр</title>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+        <div class="logo">
+                <div class="logo_text">
+                    <h1><a href="/">КиноМонстр</a></h1>
+                    <h2>Кино - наша страсть!</h2>
+                </div>
+        </div>
+        <div class="menubar">
+            <input type="checkbox" name="" id="menu-checkbox">
+            <nav role="navigation">
+                <label for="menu-checkbox" 
+                class="toggle-button" data-open="MENU" data-close="CLOSE" onclick>
+                </label>
+                <ul class="menu">
+                    <li class="selected"><a href="index.html">Главная</a></li>
+                    <li><a href="films.html">Фильмы</a></li>
+                    <li><a href="#">Сериалы</a></li>
+                    <li><a href="rating.html">Рейтинг фильмов</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+  </header> 
+  <main>
+        <div class="wrapper" >
+          <div class="sidebar-container">
+              <div class="sidebar">
+                  <h2>Поиск</h2>
+                  <form method="post" action="#" id="search-form">
+                    <input type="search" name="search_field" placeholder="ваш запрос">
+                    <input type="submit" class="btn" value="найти">
+                  </form>
+              </div>
+              <div class="sidebar">
+                <h2>Вход</h2>
+                
+                <form method="post" action="#" id="login">
+                  <div class="second-form">
+                    <input type="text" name="login_field" placeholder="логин">
+                    <input type="password" name="password_field" placeholder="пароль">
+                    <input type="submit" class="btn2" value="вход">
+                    <div class="lables_passreg_text">
+                      <span><a href="#">забыли пароль?</a></span> | <span><a href="#">регистрация</a></span>
+                    </div>
+                 </div>
+                </form>
+              </div>
+              <div class="sidebar">
+                <h2>Новости</h2>
+                <span>31.02.2018</span>
+                <p>Мы запустили расширенный поиск</p>
+                <a href="#">Читать</a>
+              </div>
+              <div class="sidebar">
+                <h2>Рейтинг фильмов</h2>
+                <ul>
+                  <li><a href="#">movie1</a><span class="rating-sidebar">8.1</span></li>
+                  <li><a href="#">movie2</a><span class="rating-sidebar">8.1</span></li>
+                  <li><a href="#">movie3</a><span class="rating-sidebar">8.1</span></li>
+                  <li><a href="#">movie4</a><span class="rating-sidebar">8.1</span></li>
+                </ul>
+              </div>
+          </div>
+          <div class="content">
+            <h1>Интерстеллар</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qcPfI0y7wRU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="info-film-page">
+                <span class="film-label">Рейтинг: </span>
+                <span class="value">8.1/10</span>
+                <span class="film-label">Год: </span>
+                <span class="value">2014</span>
+                <span class="film-label">Режиссер: </span>
+                <span class="value">Кристофер Нолан</span>
+            </div>
+            <hr>
+            <div class="show-wrapper">
+            <h2>Описание Интерстеллар</h2>
+                <div class="description-film">
+                    <img src="assets/img/inter.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Magnam fugiat aut dolore? Ullam ad cum porro
+                      maiores ratione illo labore sapiente earum 
+                      exercitationem aperiam provident, eligendi error 
+                      a eum maxime, explicabo quia.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="show-wrapper">
+                <h2>Отзывы об Интерстеллар</h2>
+                    <div class="reviews">
+                        <div class="review-name">Somebody</div>
+                        <div class="review-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus 
+                            suscipit voluptas omnis doloribus! Veniam, rem?
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <div class="review-name">Somebody else</div>
+                        <div class="review-text">Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Ipsam fuga minima dicta maxime magnam nulla 
+                            exercitationem laborum praesentium nobis veritatis provident 
+                            cupiditate delectus, hic quasi reiciendis libero veniam id 
+                            unde iste mollitia aspernatur magni nemo? Repellendus facere 
+                            eaque quisquam?
+                        </div>
+                    </div>
+                    <div class="send">
+                      <form action="#" method="post" id="review">
+                        <div class="review-form">
+                          <input type="text" name="review-name" placeholder="ваше имя">
+                          <textarea name="review-text"></textarea>
+                          <input type="submit" class="btn" value="Отправить">
+                      </div>
+                      </form>
+                    </div>
+                </div>
+        </div>
+        </div>
+  </main>
+  <footer>
+    <div class="footer-menu">
+      
+        <div><a href="index.html">Главная</a> | </div>
+        <div><a href="films.html">Фильмы</a> | </div>
+        <div><a href="#">Сериалы</a> | </div>
+        <div><a href="rating.html">Рейтинг фильмов</a> | </div>
+        <div><a href="contacts.html">Контакты</a> </div>
+       
+      <div>
+        Some copyright
+      </div>
+  </div>
+  </footer>
+</body>
+</html>
